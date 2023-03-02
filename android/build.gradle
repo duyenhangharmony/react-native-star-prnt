@@ -13,12 +13,12 @@ buildscript {
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 23
+    compileSdkVersion 31
     buildToolsVersion '25.0.0'
 
     defaultConfig {
         minSdkVersion 18
-        targetSdkVersion 22
+        targetSdkVersion 31
         versionCode 1
         versionName "1.0"
     }
@@ -34,7 +34,7 @@ repositories {
 dependencies {
     compile files('libs/StarIOPort3.1.jar')
     compile files('libs/starioextension.jar')
-    compile 'com.facebook.react:react-native:+'
-    compile 'com.google.zxing:core:3.2.1'
+    implementation 'com.facebook.react:react-native:+'
+    implementation 'com.google.zxing:core:3.2.1'
 }
   
